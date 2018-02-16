@@ -16,3 +16,5 @@
 
 # Ignore war files
 *.war
+
+config/database.yml
