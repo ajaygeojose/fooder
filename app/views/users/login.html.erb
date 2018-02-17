@@ -1,2 +1,27 @@
-<h1>Users#login</h1>
-<p>Find me in app/views/users/login.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fooder</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body background="http://wanderingtummy.com/wp-content/uploads/2014/04/cropped-fine-dining-background.jpg">
+<center>
+<br/><br/><br/><br/>
+<h1><font size="50" style="font-family:Comic Sans MS;color:#1D1D1A;text-shadow:30;">fooder..!</font></h1>
+<br/><br/><br/>
+
+<img src="http://www.cestboncooking.ca/sites/default/files/styles/front/public/front-teaser-images/AdobeStock_102642119.png?itok=fSGcYw0s" style="height:210px;width:190px;">
+<br/><br/><br/>
+<form>
+<input type="textfield" placeholder="please enter email or username.." name="t1" id="t1"/>
+<a href="http://localhost:3000/users/index"><input type="button" value="login" name="b1" id="b1"/></a>
+</form>
+</center>
+
+<%= yield %>
+
+</body>
+</html>
